@@ -11,7 +11,7 @@ namespace SpriteKind {
     export const Nivel10 = SpriteKind.create()
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Nivel4, function (sprite, otherSprite) {
-    bandera.destroy()
+    bandera2.destroy()
     tiles.setTilemap(tiles.createTilemap(hex`14001400090505050505050505070505050505050505050c040d0d0d0d0d0d0d0d040d0d0d0d0d0d0d0d0d04040d0d0d0d0d0d0d0d040d0d0d0d0d0d0d0d0d04040d0d0905050505050805050505050c0d0d0d04040d0d040e0e0e0e0e0e0e0e0e0e0e040d0d0d040305070805070505050705050507050807050502040a040a0a040a0a0a040a0a0a040a0a040a0a04040a040a0a040a0a0a040a0a0a040a0a040a0a04040a0105050805050508050505020a0a040a0a04040a0a0a0a0a0a0a0a0a0a0a0a040a0a040a0a040305070505050507050505050508050508050502040b040b0b0b0b040b0b0b0b0b0b0b0b0b0b0b04040b040b0b0b0b040b0b09050505050507050502040b040b0b0b0b040b0b040b0b0b0b0b040b0b04040b040b0b0b0b040b0b040b0b0b0b0b040b0b040305020b0b0b0b040b0b040b0b0b0b0b040b0b04040b0305050505060b0b040b0b0b0b0b040b0b04040b040b0b0b0b0b0b0b040b0b0b0b0b040b0b04040b040b0b0b0b0b0b0b040b0b0b0b0b040b0b040105080505050505050508050505050508050506`, img`
         . . . . . . . . . . . . . . . . . . . . 
         . 2 2 2 2 2 2 2 2 . 2 2 2 2 2 2 2 2 2 . 
@@ -109,7 +109,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Nivel7, function (sprite, otherS
         . . . . . b 1 1 d d b . . . . . b c c c c c . . 
         . . . . . b 1 d d b b . . . . . b d d b . . . . 
         `)
-    bandera.destroy()
+    bandera6.destroy()
     tiles.setTilemap(tiles.createTilemap(hex`160016000104040404040409040409040409040904090409040c05030303030303050303050303050305030503050305050303030303030503030503030503050305030503050503030303030305030305030305030604070408030506040404040404080303050303050305030303050305050303030303030604040704040704080303030503050503030303030305030303030303030503030306040805030303030303050303030303030306040404080305060404090404040704040904040404080303030503050503030503030303030305030303030503030305030505030305030303030303050303030305030303050305050303060404040404040803030303060409040803050503030503030303030305030303030503050305030505030305030303030303050303030305030503050305050303050303030303030503030303050305030503050503030503030303030305030303030503050305030505030305030303030303050303030305030503050305060404070404040404040803030303050305030503050503030303030303030305030303030503050305030505030303030303030303050303030305030503050305050303030303030303030503030303050305030503050a04040404040404040407040404040704070407040b`, img`
         . . . . . . . . . . . . . . . . . . . . . . 
         . 2 2 2 2 2 2 . 2 2 . 2 2 . 2 . 2 . 2 . 2 . 
@@ -170,7 +170,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Nivel9, function (sprite, otherS
         . . . . . 9 . . . . 
         . . . . . . . . . . 
         `)
-    bandera.destroy()
+    bandera8.destroy()
     tiles.setTilemap(tiles.createTilemap(hex`19001900010101010b060606060606060606060606060606060606060c0101010108010101010101010101010101010101010101010d010101010206060606060606060606060606060606060606030101010108010101010101010101010101010101010101010d010101010206060606060606060606060606060606060606030101010108010101010101010101010101010101010101010d010101010206060606060606060606060606060606060606030101010108010101010101010101010101010101010101010d01010101020606040606060606060406060606040406060409010101010801010801010101010108010101010a0a01010801010101010206040506040604060603010101010a0a010108010101010108010801010a0108010108010101010a0a010108010101010108010801010a0108010108010101010a0a010108010101010108010801010a0108010108010101010a0a010108010101010108010801010a0108010108010101010a0a010108010101010108010801010a0108010108010101010a0a010108010101010108010801010a0108010108010101010a0a010108010101010108010801010a0108010108010101010a0a010108010101010108010801010a0108010108010101010a0a010108010101010108010801010a0108010108010101010a0a010108010101010108010801010a0108010108010101010a0a010108010101010108010801010a0108010107060606060503010108010101010108010801010a0108010101010101010102060609010101010108010801010a01020606060606060606090101010101010101070605060605060901010101010101010101010101`, img`
         2 2 2 2 . . . . . . . . . . . . . . . . . . . . . 
         2 2 2 2 . 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . 
@@ -227,7 +227,7 @@ function premios () {
         Posicion(bandera)
     }
     if (info.score() == 10) {
-        bandera = sprites.create(img`
+        bandera2 = sprites.create(img`
             . . . . . . . . . . . . . . . . 
             2 2 2 2 2 2 2 2 2 . . . . . . . 
             2 2 2 2 2 2 2 2 2 . . . . . . . 
@@ -246,10 +246,10 @@ function premios () {
             . . . . . . . . e . . . . . . . 
             `, SpriteKind.Nivel3)
         nivel += 1
-        Posicion(bandera)
+        Posicion(bandera2)
     }
     if (info.score() == 15) {
-        bandera = sprites.create(img`
+        bandera3 = sprites.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -268,9 +268,9 @@ function premios () {
             . . . . . . . . . e . . . . . . 
             `, SpriteKind.Nivel4)
         nivel += 1
-        Posicion(bandera)
+        Posicion(bandera3)
     } else if (info.score() == 20) {
-        bandera = sprites.create(img`
+        bandera4 = sprites.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -289,9 +289,9 @@ function premios () {
             . . . . . . . . . e . . . . . . 
             `, SpriteKind.Nivel5)
         nivel += 1
-        Posicion(bandera)
+        Posicion(bandera4)
     } else if (info.score() == 25) {
-        bandera = sprites.create(img`
+        bandera5 = sprites.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -310,9 +310,9 @@ function premios () {
             . . . . . . . . . e . . . . . . 
             `, SpriteKind.Nivel6)
         nivel += 1
-        Posicion(bandera)
+        Posicion(bandera5)
     } else if (info.score() == 30) {
-        bandera = sprites.create(img`
+        bandera6 = sprites.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -331,9 +331,9 @@ function premios () {
             . . . . . . . . . e . . . . . . 
             `, SpriteKind.Nivel7)
         nivel += 1
-        Posicion(bandera)
+        Posicion(bandera6)
     } else if (info.score() == 35) {
-        bandera = sprites.create(img`
+        bandera7 = sprites.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -352,9 +352,9 @@ function premios () {
             . . . . . . . . . e . . . . . . 
             `, SpriteKind.Nivel8)
         nivel += 1
-        Posicion(bandera)
+        Posicion(bandera7)
     } else if (info.score() == 40) {
-        bandera = sprites.create(img`
+        bandera8 = sprites.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -373,9 +373,9 @@ function premios () {
             . . . . . . . . . e . . . . . . 
             `, SpriteKind.Nivel9)
         nivel += 1
-        Posicion(bandera)
+        Posicion(bandera8)
     } else if (info.score() == 45) {
-        bandera = sprites.create(img`
+        bandera_9 = sprites.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -394,8 +394,9 @@ function premios () {
             . . . . . . . . . e . . . . . . 
             `, SpriteKind.Nivel10)
         nivel += 1
-        Posicion(bandera)
+        Posicion(bandera_9)
     } else if (info.score() == 50) {
+        let bandrera10: Sprite = null
         bandera = sprites.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -414,6 +415,7 @@ function premios () {
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             `, SpriteKind.Nivelfinal)
+        Posicion(bandrera10)
     }
     if (nivel == 1) {
         premio = sprites.create(img`
@@ -746,7 +748,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Nivel8, function (sprite, otherS
         . . . . c b b a a 6 b c . . . . 
         . . . . . . b 6 6 c c . . . . . 
         `)
-    bandera.destroy()
+    bandera7.destroy()
     tiles.setTilemap(tiles.createTilemap(hex`15001500040202020802020202020202020802080208020211030e0e0e030e0e0e0e0e0e0e0e030e030e030e0e0305020202090202020802020802070e030e030e0e03030a0b0c0d0e0d0d031212030e0502090209020207030c0c0c0c0c0c0c031212030e030e0e0e0e0e0e03030c0c0c0c0c0c0c050202070e05020202080202070502020802020202071212030e030e0e0e030e0e03030c0c030b0b0b0b03120e0502070e0e0e030e0e03030c0c0502020202071212030e05020202070e0e03030c0c030b0b0b0b050202070e030e0e0e030e0e03030c0c0102020802071212030e0502020809080207030c0c0c0c0c030b050202070e030e0e030e030e030502020202020902071212030e030e0e0502070e0303101010101010100312120502070e0e030e0502070310040202080202090202070e030e0e0502070e030310031010031212121212030e050202070e0502070310031010050202020802070e030e0e0502070e03031003101003101010030e030e050202070e050207031001020206101010030e0502070e0e030e050207031010101010101010030e030e030e0e030e030e03010202020202020202090209020902020902090206`, img`
         . . . . . . . . . . . . . . . . . . . . . 
         . 2 2 2 . 2 2 2 2 2 2 2 2 . 2 . 2 . 2 2 . 
@@ -835,7 +837,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Nivel2, function (sprite, otherS
     premios()
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Nivel5, function (sprite, otherSprite) {
-    bandera.destroy()
+    bandera4.destroy()
     scene.setBackgroundImage(img`
         9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
         9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
@@ -1016,7 +1018,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Nivel6, function (sprite, otherS
         . c b b 4 1 c . 
         . . c c c c . . 
         `)
-    bandera.destroy()
+    bandera5.destroy()
     tiles.setTilemap(tiles.createTilemap(hex`160016000104040404040404040404040404040404040404040d070b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b07070b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b07070b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0705040404040404040404040404040408040408040409070b0b0b0b0b0b0b0b0b0b0b0b0b0b070b0b070b0b07070b0b0b0b0b0b0b0b0b0b0b0b0b0b070b0b070b0b0705040404040804040404040804040402040402040409070b0b0b0b070b0b0b0b0b070b0b0b0b0b0b0b0b0b07070b0b0b0b070b0b0b0b0b070b0b0b0b0b0b0b0b0b07070b0b0b0b070b0b0b0b0b0504040404040804040409070b0b0b0b070b0b0b0b0b070b0b0b0b0b070b0b0b07070b0b0b0b070b0b0b0b0b070b0b0b0b0b070b0b0b07070b0b0b0b070b0b0b0b0b050408040804090b0b0b07070b0b0b0b070b0b0b0b0b070b070b070b070b0b0b070504040404090b0b0b0b0b070b070b070b070b0b0b07070b0b0b0b070b0b0b0b0b070b0604030b070b0b0b07070b0b0b0b070b0b0b0b0b070b0b0b0b0b070b0b0b07070b0b0b0b060408040404020404080404090b0b0b07070b0b0b0b0b0b070b0b0b0b0b0b070b0b070b0b0b070604040404040402040404040404020404020404040300000000000000000000000000000000000000000000`, img`
         . . . . . . . . . . . . . . . . . . . . . . 
         . 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . 
@@ -1057,10 +1059,18 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 })
 let Enemigo4: Sprite = null
 let premio: Sprite = null
+let bandera_9: Sprite = null
+let bandera7: Sprite = null
+let bandera5: Sprite = null
+let bandera4: Sprite = null
+let bandera3: Sprite = null
+let bandera8: Sprite = null
 let enemigo_3: Sprite = null
+let bandera6: Sprite = null
+let bandera: Sprite = null
 let enemigo2: Sprite = null
 let enemigo1: Sprite = null
-let bandera: Sprite = null
+let bandera2: Sprite = null
 let coche: Sprite = null
 let imagen = 0
 let nivel = 0
@@ -1127,7 +1137,8 @@ game.setDialogFrame(img`
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
     `)
-game.splash("atrapa  objetos magicos ", "autor:mario banegas   NACIMIENTO:2010")
+game.splash("atrapa  objetos magicos ", "autor:mario banegas  ")
+game.splash("NACIMIENTO:2010 ", "Juego hecho en:2020")
 game.showLongText("coge todos los objetos mágicos lo tendrás que buscar los tu.´   cuando             encontreís    todos los       objetos   magicos te saldra una bandera y la      tendras que   pasarla no        tienes que    tocar nin gun boton para      coger los     objetos  y      esquiba los       enemigos para que no te  maten y cada vez que    llegas a coger 5   objetos   magicos   subiras de nivel.       Suerte.", DialogLayout.Center)
 nivel = 1
 imagen = 0
